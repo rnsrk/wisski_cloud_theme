@@ -1,0 +1,83 @@
+.wisski-cloud-theme--front .wisski-cloud-theme--front-block--row:nth-child(odd) .wisski-cloud--field__pic_blo__ima {
+  order: 1;
+}
+
+.wisski-cloud-theme--front .wisski-cloud-theme--front-block--row:nth-child(odd) .wisski-cloud--field__pic_blo_bod {
+  order: 2;
+}
+
+.wisski-cloud-theme--front .wisski-cloud-theme--front-block--row:nth-child(even) .wisski-cloud--field__pic_blo__ima {
+  order: 2;
+}
+
+.wisski-cloud-theme--front .wisski-cloud-theme--front-block--row:nth-child(even) .wisski-cloud--field__pic_blo_bod {
+  order: 1;
+}
+
+.wisski-cloud--field__pic_blo__ima img {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  object-fit: cover; // This will ensure the image covers the full width/height of the container
+}
+
+#block-wisski-cloud-theme-testinstancewarning {
+  background-color: #ffffcc;
+  border: 1px solid #ffcc00;
+  padding: 15px;
+  margin-bottom: 20px;
+
+}
+
+body {
+  position: relative;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  bottom: 0;
+  right: 0;
+  border-left: 40vw solid transparent;
+  border-bottom: 40vh solid #FFD1A1;
+  /* Change this to your preferred color */
+  z-index: -1;
+  transition: all 0.1s ease-in-out;
+}
+
+body::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-right: 40vw solid transparent;
+  border-top: 40vh solid #FFD1A1;
+  /* Pastel orange */
+  top: 0;
+  left: 0;
+  z-index: -1;
+  transition: all 0.1s ease-in-out;
+}
+
+.field-content p a, .breadcrumb > li > a, div.field p a, div.description a {
+  color: #00008B ;
+  font-weight: bold;
+}
+
+.table > * > * > * {
+  background-color: unset !important ;
+}
+
+.btn-primary {
+  background-color: #FFD1A1 !important;
+  border-color: #FFD1A1 !important;
+  color: black !important;
+}
+
+.dropdown-item:hover,
+.dropdown-item:focus
+ {
+  background-color: #FFD1A1;
+ }
